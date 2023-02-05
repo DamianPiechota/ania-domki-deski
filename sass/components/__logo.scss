@@ -1,38 +1,20 @@
-.header__logo--left a {
-  font-family: "Raleway";
+.logo {
+  display: block;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
-  text-decoration: none;
+
+  @media screen and (max-width: $tablet-max) {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 }
 
-.header__logo--right a {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
-  text-decoration: none;
-}
-
-.footer__logo--right a {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.logo-fotter {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.footer__logo {
-  display: flex;
-  gap: 70px;
+.logo__text {
+  color: $color-accent;
 }
