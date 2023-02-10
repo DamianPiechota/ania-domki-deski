@@ -3,44 +3,11 @@
 
   text-align: center;
 
-  background-image: $gradient-hero-bg,
-    url("../images/main/hero/hero-bg-mobile.jpg");
+  background-image: $gradient-hero-bg, url("/images/main/houses/1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: $color-silver;
-
-  @media screen and (min-resolution: 2dppx) {
-    background-image: $gradient-hero-bg,
-      url("../images/main/hero/hero-bg-mobile@2x.jpg");
-  }
-
-  @media screen and (min-width: $tablet) {
-    background-image: $gradient-hero-bg,
-      url("../images/main/hero/hero-bg-tablet.jpg");
-
-    @media screen and (min-resolution: 2dppx) {
-      background-image: $gradient-hero-bg,
-        url("../images/main/hero/hero-bg-tablet@2x.jpg");
-    }
-  }
-
-  @media screen and (max-width: $tablet-max) {
-    padding: 118px 0;
-  }
-
-  @media screen and (min-width: $desktop) {
-    max-width: 1600px;
-    padding: 200px 0;
-
-    background-image: $gradient-hero-bg,
-      url("../images/main/hero/hero-bg-desktop.jpg");
-
-    @media screen and (min-resolution: 2dppx) {
-      background-image: $gradient-hero-bg,
-        url("../images/main/hero/hero-bg-desktop@2x.jpg");
-    }
-  }
 }
 
 .hero__title {
